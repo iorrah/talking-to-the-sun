@@ -1,0 +1,30 @@
+.section {
+  h1 {
+    font-size: 3.5rem;
+    font-weight: 100;
+  }
+
+  img {
+    display: inline-block;
+    height: 3.5rem;
+    width: auto;
+    padding: 0;
+    margin: 0 .2rem 0 0;
+    position: relative;
+    top: .6rem;
+  }
+
+  sup {
+    font-size: .9rem;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: -.6rem;
+    top: -2rem;
+
+    a {
+      color: blue;
+      cursor: pointer;
+    }
+  }
+}

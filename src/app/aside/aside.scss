@@ -1,0 +1,49 @@
+.aside {
+  ul {
+    padding: 0;
+    margin: 0;
+
+    li {
+      width: 14.2857143%;
+      display: inline-block;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      border: 0;
+
+      .content {
+        display: block;
+        padding: .6rem 1.2rem;
+        border: .09rem solid #eee;
+        border-radius: .09rem;
+        margin: 0 .6rem 0;
+      }
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 0 .2rem;
+      }
+
+      p {
+        text-align: center;
+        font-size: .785rem;
+
+        &.date {
+          margin: 0 0 .2rem;
+          color: #bbb;
+        }
+
+        &.degrees {
+          margin: 0;
+
+          span {
+            color: #bbb;
+            margin: 0 0 0 .2rem;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.footer {
+  p {
+    margin: 0;
+    padding: 1rem 0 0;
+    text-align: right;
+
+    a {
+      &,
+      &:hover,
+      &:focus {
+        color: #aaa;
+        font-size: .6rem;
+        text-decoration: none;
+      }
+    }
+  }
+}
