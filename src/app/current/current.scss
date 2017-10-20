@@ -1,8 +1,9 @@
+@import '../../styles/colours.scss';
+
 .current {
   h1 {
     font-size: 3.5rem;
     font-weight: 300 !important;
-    font-family: 'Fondamento', cursive;
   }
 
   img {
@@ -20,12 +21,23 @@
     margin: 0;
     padding: 0;
     position: relative;
-    left: -.6rem;
     top: -2rem;
+    color: #848484;
 
     a {
-      color: blue;
-      cursor: pointer;
+      margin: 0 .5rem 0;
+
+      &:first-child { margin-left: 0; }
+      &:last-child { margin-right: 0; }
+
+      &,
+      &:hover,
+      &:focus {
+        color: inherit;
+        cursor: pointer;
+      }
+
+      &.active { color: $shark; }
     }
   }
 }

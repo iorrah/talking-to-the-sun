@@ -1,3 +1,5 @@
+@import '../../styles/colours.scss';
+
 .aside {
   ul {
     padding: 0;
@@ -11,7 +13,13 @@
       padding: 0;
       border: 0;
 
+      &.active .content {
+        background-color: #f7f7f7;
+        border-color: #dadada;
+      }
+
       .content {
+        cursor: pointer;
         display: block;
         padding: .6rem 1.2rem;
         border: .09rem solid #eee;
@@ -41,6 +49,9 @@
           span {
             color: #bbb;
             margin: 0 0 0 .2rem;
+            transition: color .9s;
+
+            &.active { color: $shark; }
           }
         }
       }

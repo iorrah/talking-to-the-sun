@@ -1,82 +1,37 @@
 import React, { Component } from 'react';
+import AsideItem from './item/item.js';
 import './aside.css';
 
 class Aside extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      items: []
+  previousExample() {
+    return {
+      "id": 1,
+      "date": "Wed",
+      "celcius": 16,
+      "fahrenheit": 10,
     }
   }
 
-  componentDidMount() {
-    let items = [
-      {
-        "id": 1,
-        "date": "Wed",
-        "celcius": 16,
-        "fahrenheit": 10,
-      },
-      {
-        "id": 2,
-        "date": "Wed",
-        "celcius": 16,
-        "fahrenheit": 10,
-      },
-      {
-        "id": 3,
-        "date": "Wed",
-        "celcius": 16,
-        "fahrenheit": 10,
-      },
-      {
-        "id": 4,
-        "date": "Wed",
-        "celcius": 16,
-        "fahrenheit": 10,
-      },
-      {
-        "id": 4,
-        "date": "Wed",
-        "celcius": 16,
-        "fahrenheit": 10,
-      },
-      {
-        "id": 4,
-        "date": "Wed",
-        "celcius": 16,
-        "fahrenheit": 10,
-      },
-      {
-        "id": 4,
-        "date": "Wed",
-        "celcius": 16,
-        "fahrenheit": 10,
-      },
-    ];
-
-    this.setState({ items });
+  checkIfisActive(item) {
+    return item.dt === this.props.current.dt;
   }
 
   render() {
-    var items = this.state.items;
+    let weathers = this.props.weathers;
+    let current = this.props.current;
+    let units = this.props.units;
 
     return (
       <div className="aside">
         <ul>
-          {items.map((item) =>
-            <li key={item.id}>
-              <div className="content">
-                <p className="date">{item.date}</p>
-
-                <img src="images/icons/sunny.png" alt="" />
-
-                <p className="degrees">
-                  {item.celcius}°
-                  <span>{item.fahrenheit}°</span>
-                </p>
-              </div>
-            </li>
+          {weathers.map((item) =>
+            <AsideItem
+              item={item}
+              units={units}
+              key={item.dt}
+              current={current}
+              is_active={this.checkIfisActive(item)}
+              onClick={() => this.props.onClick(item)} />
           )}
         </ul>
       </div>
