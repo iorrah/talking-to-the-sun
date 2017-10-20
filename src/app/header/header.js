@@ -4,10 +4,12 @@ import './header.css';
 class Header extends Component {
   render() {
     return (
-      <div className="header">
-        <h1>10787 Berlin</h1>
-        <p>Wednesday 12:00</p>
-        <p>Mostly Cloudy</p>
+      <div className="header container">
+        <a href="/">
+          <h1>
+            Talking to the <span>sun</span>
+          </h1>
+        </a>
       </div>
     );
   }

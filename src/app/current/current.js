@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import './section.css';
+import './current.css';
 
-class Section extends Component {
+class Current extends Component {
   render() {
     return (
-      <div className="section">
+      <div className="current">
         <h1>
           <img src="images/icons/sunny.png" alt="" />
           16 <sup>°C | <a>°F</a></sup>
@@ -14,4 +14,4 @@ class Section extends Component {
   }
 }
 
-export default Section;
+export default Current;
