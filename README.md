@@ -1,8 +1,7 @@
-<h1 align="center">Talking to the sun</h1>
+## Talking to the sun
 
-> 'Cause I'm never gonna stop the rain by complainin' <br />
-> Because I'm free<br />
-> Nothin's worryin' me."<br />
+> Because I'm free...<br />
+> Nothin's worryin' me
 
 ### Available Scripts
 
