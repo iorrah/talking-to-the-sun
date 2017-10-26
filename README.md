@@ -1,13 +1,8 @@
 <h1 align="center">Talking to the sun</h1>
 
-> "(...)
-> 'Cause I'm never gonna stop the rain by complainin'
-> Because I'm free
-> Nothin's worryin' me."
-
-A reactive application for those who do
-not have time to wait till the happiness 
-steps up to greet them.
+> 'Cause I'm never gonna stop the rain by complainin' <br />
+> Because I'm free<br />
+> Nothin's worryin' me."<br />
 
 ### Available Scripts
 
