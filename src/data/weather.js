@@ -4,9 +4,9 @@ let weather = {
         "lat": 51.5085,
         "lon": -0.1258
       },
-      "country": "GB",
+      "country": "DE",
       "id": 2643743,
-      "name": "London"
+      "name": "Berlin"
     },
     "cnt": 40,
     "cod": "200",
